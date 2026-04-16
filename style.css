@@ -1,119 +1,45 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
+*
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  background: #f4f6f8;
-  color: #222222e7;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f5132, #198754);
+  color: #333;
+  min-height: 100vh;
 }
-
-header {
-  background: #1a6e3c00;
-  color: white;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 { font-size: 20px; }
-
-nav button {
-  margin-left: 10px;
-  padding: 8px 16px;
-  background: rgb(255, 255, 255);
-  color: #2c754803;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-nav button:hover { background: #c53b4003; }
-
-.page { display: none; padding: 24px; max-width: 860px; margin: auto; }
-.page.active { display: block; }
-
-h2 {
-  font-size: 18px;
-  margin: 24px 0 12px;
-  color: #000000;
-}
-
-form {
-  background: rgba(107, 66, 66, 0.004);
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-
-label {
-  display: block;
-  font-size: 13px;
-  color: #55555500;
-  margin-top: 12px;
-  margin-bottom: 4px;
-}
-
-input, select {
-  width: 100%;
-  padding: 9px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  background: #4b1b1b00;
-}
-
-button[type="submit"] {
-  margin-top: 16px;
-  width: 100%;
-  padding: 10px;
-  background: #6e3d1a;
-  color: rgb(203, 92, 92);
-  border: none;
-  border-radius: 6px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover { background: #145c31; }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: rgba(0, 0, 0, 0.489);
-  border-radius: 10px;
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(105, 101, 101, 0.008);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   overflow: hidden;
+}
+header {
+  background: #198754;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.card {
+  padding: 25px;
+  margin: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
   border: 1px solid #ddd;
+  border-radius: 8px;
 }
-
-th {
-  background: #f5e8e8;
-  padding: 10px;
-  font-size: 13px;
-  text-align: left;
-  color: #6e2e1a;
-}
-
-td {
-  padding: 10px;
-  font-size: 13px;
-  border-bottom: 1px solid #eee;
-}
-
-.badge {
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 12px;
+button {
+  background: #198754;
+  color: white;
   font-weight: bold;
+  cursor: pointer;
 }
-
-.installed { background: #d4f5e2; color: #145c31; }
-.needed    { background: #fff3cd; color: #7a5700; }
-.potential { background: #d6eaff; color: #0c4a8f; }
-.paid      { background: #d4f5e2; color: #145c31; }
-.partial   { background: #fff3cd; color: #7a5700; }
-.pending   { background: #fde2e2; color: #8b1a1a; }
+button:hover { background: #146c43; }
+.status-paid { background: #d4edda; color: #155724; }
+.status-pending { background: #fff3cd; color: #856404; }
